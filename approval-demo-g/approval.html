@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <meta charset="UTF-8" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="image_src" type="image/png" href="screen.png" / >
+    
+    <title>WHICH IS (are?) THE CUTEST?</title>
+    
+    <meta name="description" content="A better way to vote!" />
+    
+<!--    <meta property="og:url" content="http://gabesmall.net/approval-demo-g/" />
+    <meta property="og:site_name" content="gabesmall.net" />
+    <meta property="og:image" content="http://gabesmall.net/approval-demo-g/screen.png" />
+    <meta property="og:title" content="WHICH IS THE CUTEST?" />
+    <meta property="og:description" content="Is this a fair election, or is there a better way...?" /> <!--Facebook meta data; please modify for your own site, or delete-->
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="approval-style.css" />
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="approval-script.js"></script>
+    
+<!--    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33378826-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script> <!--Google tracking script; please add your own tracking script, or delete-->
+</head>
+
+<body onload="clear()">
+
+<div id="wrapper">
+    <header id="header">
+    	<div id="headerText">
+	    WHICH IS (are?) THE CUTEST?<br />
+	    YOU CAN PICK MORE THAN ONE THIS TIME!<br />
+	    Choose your favorite(s), then click <span onclick="submit('approval')" class="link">VOTE</span>
+        </div>
+    </header>
+    <footer id="footer" class="hidden">
+    </footer>
+    <div id="main">
+    <section id="candidates">
+	    <label for="candidateIsSelected-1">
+		<div class="candidate" id="candidate-1" onclick="toggleMany('candidate-1')"><div class="bar hidden" id="bar-1"></div></div></label>
+	    <label for="candidateIsSelected-2">
+		<div class="candidate" id="candidate-2" onclick="toggleMany('candidate-2')"><div class="bar hidden" id="bar-2"></div></div></label>
+	    <label for="candidateIsSelected-3">
+		<div class="candidate" id="candidate-3" onclick="toggleMany('candidate-3')"><div class="bar hidden" id="bar-3"></div></div></label>
+    </section> <!--candidates-->
+	<section id="vote">
+	    <input type="checkbox" id="candidateIsSelected-1" name="candidateIsSelected-1" value="true" class="hidden"/>
+	    <input type="checkbox" id="candidateIsSelected-2" name="candidateIsSelected-2" value="true" class="hidden"/>
+	    <input type="checkbox" id="candidateIsSelected-3" name="candidateIsSelected-3" value="true" class="hidden"/>
+        <div id="submitVote" onclick="submit('approval')"><span class="buttonText">VOTE</span></div>
+	</section> <!--vote-->
+    <section id="results" class="hidden">
+        <div id="submitResults" onclick="results()"><span class="buttonText"">See Results</span></div>
+        <div id="tables" class="hidden">
+            <table id="percentTable">
+                <tr>
+                    <td width=33% class="percent">47%</td>
+                    <td width=auto class="percent winner">48%</td>
+                    <td width=33% class="percent">42%</td>
+                </tr>
+                <tr>
+                    <td>1759</td>
+                    <td class="winner">1803</td>
+                    <td>1589</td>
+                </tr>
+            </table> <!--percentTable-->
+            <table id="resultsTable">
+            	<tr style="height:20px;"><td colspan="7"></td></tr>
+                <tr>
+                    <td width=auto></td>
+                    <td width=10%></td>
+                    <td width=5%></td>
+                    <td width=10%></td>
+                    <td width=5%></td>
+                    <td width=10%><div class="small candidateImageSmall-1"></div></td>
+                    <td width=50% class="alignLeft"><div class="hbar" id="hbar-1"></div><div>13% <span>(472)</span></div></td>
+                </tr>
+                <tr>
+                    <td colspan="5">3771<br />ballots cast</td>
+                    <td><div class="small candidateImageSmall-2"></div></td>
+                    <td class="alignLeft"><div class="hbar" id="hbar-2"></div><div>13% <span>(487)</span></div></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="small candidateImageSmall-3"></div></td>
+                    <td class="alignLeft"><div class="hbar" id="hbar-3"></div><div>39% <span>(1467)</span></div></td>
+                </tr>
+                <tr id="highlighted">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="small candidateImageSmall-1"></div></td>
+                    <td>+</td>
+                    <td><div class="small candidateImageSmall-2"></div></td>
+                    <td class="alignLeft"><div class="hbar" id="hbar-4"></div><div>32% <span>(1223)</span></div></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="small candidateImageSmall-1"></div></td>
+                    <td>+</td>
+                    <td><div class="small candidateImageSmall-3"></div></td>
+                    <td class="alignLeft"><div class="hbar" id="hbar-5"></div><div>1% <span>(29)</span></div></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><div class="small candidateImageSmall-2"></div></td>
+                    <td>+</td>
+                    <td><div class="small candidateImageSmall-3"></div></td>
+                    <td class="alignLeft"><div class="hbar" id="hbar-6"></div><div>2% <span>(58)</span></div></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><div class="small candidateImageSmall-1"></div></td>
+                    <td>+</td>
+                    <td><div class="small candidateImageSmall-2"></div></td>
+                    <td>+</td>
+                    <td><div class="small candidateImageSmall-3"></div></td>
+                    <td class="alignLeft"><div class="hbar" id="hbar-7"></div><div>1% <span>(35)</span></div></td>
+                </tr>
+            </table> <!--resultsTable-->
+        </div> <!--tables-->
+    </section> <!--results-->
+    </div> <!--main-->
+</div> <!--wrapper-->
+
+</body>
+
+</html>

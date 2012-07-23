@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <meta charset="UTF-8" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="image_src" type="image/png" href="screen.png" / >
+    
+    <title>WHO IS THE HOTTEST?</title>
+    
+    <meta name="description" content="Is this a fair election, or is there a better way...?" />
+    
+<!--    <meta property="og:url" content="http://gabesmall.net/approval-demo/" />
+    <meta property="og:site_name" content="gabesmall.net" />
+    <meta property="og:image" content="http://gabesmall.net/approval-demo/screen.png" />
+    <meta property="og:title" content="WHO IS THE HOTTEST?" />
+    <meta property="og:description" content="Is this a fair election, or is there a better way...?" /> <!--Facebook meta data; please modify for your own site, or delete-->
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="plurality-style.css" />
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="plurality-script.js"></script>
+    
+<!--    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33378826-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script> <!--Google tracking script; please add your own tracking script, or delete-->
+</head>
+
+<body onload="clear()">
+
+<div id="wrapper">
+    <header id="header">
+    	<div id="headerText">
+	    WHO IS THE HOTTEST? Choose carefully!<br />
+	    Choose your favorite, then click <span onclick="submit('plurality')" class="link">VOTE</span>
+        </div>
+    </header>
+    <footer id="footer" class="hidden">
+    </footer>
+    <div id="main">
+    <section id="candidates">
+	    <label for="candidateIsSelected-1">
+		<div class="candidate" id="candidate-1" onclick="selectOne('candidate-1','candidate-2','candidate-3')"><div class="bar hidden" id="bar-1"></div></div></label>
+	    <label for="candidateIsSelected-2">
+		<div class="candidate" id="candidate-2" onclick="selectOne('candidate-2','candidate-1','candidate-3')"><div class="bar hidden" id="bar-2"></div></div></label>
+	    <label for="candidateIsSelected-3">
+		<div class="candidate" id="candidate-3" onclick="selectOne('candidate-3','candidate-1','candidate-2')"><div class="bar hidden" id="bar-3"></div></div></label>
+    </section> <!--candidates-->
+	<section id="vote">
+	    <input type="radio" id="candidateIsSelected-1" name="selection" value="candidate-1" class="hidden"/>
+	    <input type="radio" id="candidateIsSelected-2" name="selection" value="candidate-2" class="hidden"/>
+	    <input type="radio" id="candidateIsSelected-3" name="selection" value="candidate-3" class="hidden"/>
+        <div id="submitVote" onclick="submit('plurality')"><span class="buttonText">VOTE</span></div>
+	</section> <!--vote-->
+    <section id="results" class="hidden">
+        <div id="submitResults" onclick="results()"><span class="buttonText">See Results</span></div>
+        <div id="tables" class="hidden">
+            <table id="percentTable">
+                <tr>
+                    <td width=33% class="percent">30%</td>
+                    <td width=auto class="percent">29%</td>
+                    <td width=33% class="percent winner">41%</td>
+                </tr>
+                <tr>
+                    <td>1120</td>
+                    <td>1105</td>
+                    <td class="winner">1546</td>
+                </tr>
+            </table> <!--percentTable-->
+        </div> <!--tables-->
+    </section> <!--results-->
+    </div> <!--main-->
+</div> <!--wrapper-->
+
+</body>
+
+</html>

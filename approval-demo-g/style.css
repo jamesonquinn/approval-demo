@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('lgrey081.gif');
+	background-color: #DDD;
+	color: #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+table {
+	margin: auto;
+	border-collapse: collapse;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#header,
+#footer {
+	display: table;
+	width: 100%;
+	position: fixed;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	z-index: 1000;
+}
+
+#header {
+	top: 0;
+	height: 110px;
+}
+
+#footer {
+	bottom: 0;
+	height: 45px;
+}
+
+#headerText,
+#footerText {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	font-weight: normal;
+	text-shadow: -1px -1px 0 #888;
+}
+
+#main {
+	margin-top: 105px;
+	margin-bottom: 20px;
+}
+
+#candidates {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	width: 990px;
+	height: 430px;
+}
+
+.candidate,
+#submitVote,
+#submitResults {
+	-webkit-box-shadow: 5px 5px 5px #000;
+	   -moz-box-shadow: 5px 5px 5px #000;
+			box-shadow: 5px 5px 5px #000;
+	-webkit-border-radius: 12px;
+	   -moz-border-radius: 12px; 
+			border-radius: 12px; 
+	cursor: pointer;
+}
+
+.frozen {
+	cursor: default;
+}
+
+.candidate {
+	width: 300px;
+	height: 400px;
+	margin: 10px;
+	border: 5px solid #FFF;
+	float: left;
+	position: relative;
+	top: -5px;
+	left: -5px;
+}
+
+#submitVote,
+#submitResults {
+	width: 300px;
+	height: 100px;
+	margin: 10px auto;
+	display: table;
+	background-color: #4B4;
+	border-left: 5px solid #7E7;
+	border-top: 5px solid #7E7;
+	border-right: 5px solid #181;
+	border-bottom: 5px solid #181;
+	position: relative;
+	top: -5px;
+	left: -5px;
+}
+
+#submitVote {
+	font-size: 70px;
+}
+
+#submitResults {
+	font-size: 36px;
+}
+
+.buttonText {
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-shadow: -1px -1px 0 #181;
+}
+
+.candidate:hover,
+#submitVote:active,
+#submitResults:active,
+.isSelected,
+.frozen {
+	box-shadow: none;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.isSelected {
+	border-color: #4B4;
+}
+
+#candidate-1 {
+	background-image: url('black-lab-image.jpg');
+}
+
+#candidate-1.isSelected {
+	background-image: url('black-lab-selected.jpg');
+}
+
+#candidate-2 {
+	background-image: url('choc-lab-image.jpg');
+}
+
+#candidate-2.isSelected {
+	background-image: url('choc-lab-selected.jpg');
+}
+
+#candidate-3 {
+	background-image: url('white-kitten-image.jpg');
+}
+
+#candidate-3.isSelected {
+	background-image: url('white-kitten-selected.jpg');
+}
+
+#vote,
+#results {
+	text-align: center;
+}
+
+#resultsTable,
+#percentTable {
+	width: 990px;
+	border-top: 2px solid #000;
+}
+
+#resultsTable td,
+#percentTable td {
+	vertical-align: middle;
+}
+
+#tables {
+	font-size: 36px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.percent {
+	font-size: 70px;
+}
+
+#resultsTable {
+	margin-top: 15px;
+	padding-top: 15px;
+}
+
+.winner {
+	color: #4B4;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignLeft div {
+	float: left;
+}
+
+.alignLeft div span {
+	font-size: 24px;
+	position: relative;
+	top: -4px;
+}
+
+.bar,
+.hbar {
+	background-color: #4B4;
+	border-left: 2px solid #7E7;
+	border-top: 2px solid #7E7;
+	border-right: 2px solid #181;
+	border-bottom: 2px solid #181;
+	-webkit-border-radius: 7px;
+	   -moz-border-radius: 7px;
+		border-radius: 7px;
+	-webkit-animation-play-state: paused;
+	   -moz-animation-play-state: paused;
+	   -o-animation-play-state: paused;
+		animation-play-state: paused;
+}
+
+.bar {
+	width: 30px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.hbar {
+	height: 30px;
+	/*display: inline;*/
+	margin-right: 10px;
+	position: relative;
+	top: 7px;
+}
+
+.running {
+	-webkit-animation-play-state: running;
+	   -moz-animation-play-state: running;
+	   -o-animation-play-state: running;
+		animation-play-state: running;
+}
+
+.hidden {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+.small {
+	height: 100px;
+	width: 75px;
+	margin: auto;
+	-webkit-border-radius: 7px;
+	   -moz-border-radius: 7px; 
+			border-radius: 7px; 
+	border: 2px solid #FFF;
+}
+
+.candidateImageSmall-1 {	
+	background-image: url('black-lab-small.jpg');
+}
+
+.candidateImageSmall-2 {	
+	background-image: url('choc-lab-small.jpg');
+}
+
+.candidateImageSmall-3 {	
+	background-image: url('white-kitten-small.jpg');
+}
+
+.highlightRow td {
+	background-color: #7E7;
+}
+
+.link {
+	display: inline;
+	font-weight: bold;
+	color: #4B4;
+	cursor: pointer;
+}
+
+.link:active {
+	position: relative;
+	top: 2px;
+	left: 2px;
+}

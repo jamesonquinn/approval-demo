@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+
+																		/*--------------------*/
+																		/*------ bar-1 -------*/
+																		/*--------------------*/
+
+#bar-1 {
+	height: 120px;
+	-webkit-animation:barGrowth1 1s linear; /* Safari and Chrome */
+	   -moz-animation:barGrowth1 1s linear; /* Firefox */
+	   -o-animation:barGrowth1 1s linear; /* Opera */
+		animation:barGrowth1 1s linear;
+}
+
+@-webkit-keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:120px;}
+}
+
+@-moz-keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:120px;}
+}
+
+@-o-keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:120px;}
+}
+
+@keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:120px;}
+}
+
+																		/*--------------------*/
+																		/*------ bar-2 -------*/
+																		/*--------------------*/
+
+#bar-2 {
+	height: 116px;
+	-webkit-animation:barGrowth2 1s linear; /* Safari and Chrome */
+	   -moz-animation:barGrowth2 1s linear; /* Firefox */
+	   -o-animation:barGrowth2 1s linear; /* Opera */
+		animation:barGrowth2 1s linear;
+}
+
+@-webkit-keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:116px;}
+}
+
+@-moz-keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:116px;}
+}
+
+@-o-keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:116px;}
+}
+
+@keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:116px;}
+}
+
+																		/*--------------------*/
+																		/*------ bar-3 -------*/
+																		/*--------------------*/
+
+#bar-3 {
+	height: 164px;
+	-webkit-animation:barGrowth3 1s linear; /* Safari and Chrome */
+	   -moz-animation:barGrowth3 1s linear; /* Firefox */
+	   -o-animation:barGrowth3 1s linear; /* Opera */
+		animation:barGrowth3 1s linear;
+}
+
+@-webkit-keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:164px;}
+}
+
+@-moz-keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:164px;}
+}
+
+@-o-keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:164px;}
+}
+
+@keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:164px;}
+}

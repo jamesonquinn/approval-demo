@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+
+																		/*--------------------*/
+																		/*------ bar-1 -------*/
+																		/*--------------------*/
+
+#bar-1 {
+	height: 188px;
+	-webkit-animation:barGrowth1 1s linear; /* Safari and Chrome */
+	   -moz-animation:barGrowth1 1s linear; /* Firefox */
+	   -o-animation:barGrowth1 1s linear; /* Opera */
+		animation:barGrowth1 1s linear;
+}
+
+@-webkit-keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:188px;}
+}
+
+@-moz-keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:188px;}
+}
+
+@-o-keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:188px;}
+}
+
+@keyframes barGrowth1
+{
+	from {height:0;}
+	to {height:188px;}
+}
+
+																		/*--------------------*/
+																		/*------ bar-2 -------*/
+																		/*--------------------*/
+
+#bar-2 {
+	height: 192px;
+	-webkit-animation:barGrowth2 1s linear; /* Safari and Chrome */
+	   -moz-animation:barGrowth2 1s linear; /* Firefox */
+	   -o-animation:barGrowth2 1s linear; /* Opera */
+		animation:barGrowth2 1s linear;
+}
+
+@-webkit-keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:192px;}
+}
+
+@-moz-keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:192px;}
+}
+
+@-o-keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:192px;}
+}
+
+@keyframes barGrowth2
+{
+	from {height:0;}
+	to {height:192px;}
+}
+
+																		/*--------------------*/
+																		/*------ bar-3 -------*/
+																		/*--------------------*/
+
+#bar-3 {
+	height: 168px;
+	-webkit-animation:barGrowth3 1s linear; /* Safari and Chrome */
+	   -moz-animation:barGrowth3 1s linear; /* Firefox */
+	   -o-animation:barGrowth3 1s linear; /* Opera */
+		animation:barGrowth3 1s linear;
+}
+
+@-webkit-keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:168px;}
+}
+
+@-moz-keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:168px;}
+}
+
+@-o-keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:168px;}
+}
+
+@keyframes barGrowth3
+{
+	from {height:0;}
+	to {height:168px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-1 ------*/
+																		/*--------------------*/
+
+#hbar-1 {
+	width: 62px;
+	-webkit-animation:hbarGrowth1 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth1 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth1 1s linear; /* Opera */
+			animation:hbarGrowth1 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth1
+{
+	from {width:0;}
+	to {width:62px;}
+}
+
+@-moz-keyframes hbarGrowth1
+{
+	from {width:0;}
+	to {width:62px;}
+}
+
+@-o-keyframes hbarGrowth1
+{
+	from {width:0;}
+	to {width:62px;}
+}
+
+@keyframes hbarGrowth1
+{
+	from {width:0;}
+	to {width:62px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-2 ------*/
+																		/*--------------------*/
+
+#hbar-2 {
+	width: 64px;
+	-webkit-animation:hbarGrowth2 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth2 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth2 1s linear; /* Opera */
+			animation:hbarGrowth2 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth2
+{
+	from {width:0;}
+	to {width:64px;}
+}
+
+@-moz-keyframes hbarGrowth2
+{
+	from {width:0;}
+	to {width:64px;}
+}
+
+@-o-keyframes hbarGrowth2
+{
+	from {width:0;}
+	to {width:64px;}
+}
+
+@keyframes hbarGrowth2
+{
+	from {width:0;}
+	to {width:64px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-3 ------*/
+																		/*--------------------*/
+
+#hbar-3 {
+	width: 193px;
+	-webkit-animation:hbarGrowth3 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth3 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth3 1s linear; /* Opera */
+			animation:hbarGrowth3 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth3
+{
+	from {width:0;}
+	to {width:193px;}
+}
+
+@-moz-keyframes hbarGrowth3
+{
+	from {width:0;}
+	to {width:193px;}
+}
+
+@-o-keyframes hbarGrowth3
+{
+	from {width:0;}
+	to {width:193px;}
+}
+
+@keyframes hbarGrowth3
+{
+	from {width:0;}
+	to {width:193px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-4 ------*/
+																		/*--------------------*/
+
+#hbar-4 {
+	width: 161px;
+	-webkit-animation:hbarGrowth4 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth4 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth4 1s linear; /* Opera */
+			animation:hbarGrowth4 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth4
+{
+	from {width:0;}
+	to {width:161px;}
+}
+
+@-moz-keyframes hbarGrowth4
+{
+	from {width:0;}
+	to {width:161px;}
+}
+
+@-o-keyframes hbarGrowth4
+{
+	from {width:0;}
+	to {width:161px;}
+}
+
+@keyframes hbarGrowth4
+{
+	from {width:0;}
+	to {width:161px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-5 ------*/
+																		/*--------------------*/
+
+#hbar-5 {
+	width: 4px;
+	-webkit-animation:hbarGrowth5 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth5 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth5 1s linear; /* Opera */
+			animation:hbarGrowth5 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth5
+{
+	from {width:0;}
+	to {width:4px;}
+}
+
+@-moz-keyframes hbarGrowth5
+{
+	from {width:0;}
+	to {width:4px;}
+}
+
+@-o-keyframes hbarGrowth5
+{
+	from {width:0;}
+	to {width:4px;}
+}
+
+@keyframes hbarGrowth5
+{
+	from {width:0;}
+	to {width:4px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-6 ------*/
+																		/*--------------------*/
+
+#hbar-6 {
+	width: 8px;
+	-webkit-animation:hbarGrowth6 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth6 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth6 1s linear; /* Opera */
+			animation:hbarGrowth6 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth6
+{
+	from {width:0;}
+	to {width:8px;}
+}
+
+@-moz-keyframes hbarGrowth6
+{
+	from {width:0;}
+	to {width:8px;}
+}
+
+@-o-keyframes hbarGrowth6
+{
+	from {width:0;}
+	to {width:8px;}
+}
+
+@keyframes hbarGrowth6
+{
+	from {width:0;}
+	to {width:8px;}
+}
+
+																		/*--------------------*/
+																		/*------ hbar-7 ------*/
+																		/*--------------------*/
+
+#hbar-7 {
+	width: 5px;
+	-webkit-animation:hbarGrowth7 1s linear; /* Safari and Chrome */
+	   -moz-animation:hbarGrowth7 1s linear; /* Firefox */
+	   -o-animation:hbarGrowth7 1s linear; /* Opera */
+			animation:hbarGrowth7 1s linear;
+}
+
+@-webkit-keyframes hbarGrowth7
+{
+	from {width:0;}
+	to {width:5px;}
+}
+
+@-moz-keyframes hbarGrowth7
+{
+	from {width:0;}
+	to {width:5px;}
+}
+
+@-o-keyframes hbarGrowth7
+{
+	from {width:0;}
+	to {width:5px;}
+}
+
+@keyframes hbarGrowth7
+{
+	from {width:0;}
+	to {width:5px;}
+}
